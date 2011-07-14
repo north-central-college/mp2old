@@ -1,0 +1,181 @@
+@CHARSET "ISO-8859-1";
+body {
+	background-color:#fff;
+	padding: 0;
+	margin: 0;
+	font-family: verdana;
+}
+#header {
+	width:996px;
+	background-color:#70061D;
+	background-image: url('http://its.noctrl.edu/sites/all/themes/its/images/ITSBanner2.png');
+	background-position:right top;
+	background-repeat: no-repeat;
+	height:66px;
+	padding: 8px;
+}
+#header h1 {
+	color: #FFF;
+	font-family: verdana;
+	font-size: 24px;
+	
+}
+#side-navbar {
+	width:180px; 
+	background-color:#fff; 
+	float:left; 
+	border-right: 1px dashed #ddd;
+	padding: 0px 0 0 8px;
+	margin-right: 10px;
+	min-height: 600px;              
+}
+#content {
+	background-color:#fff; 
+	padding:8px;
+	color: #333;
+}
+
+
+body {
+	background-color:#fff;
+	padding: 0;
+	margin: 0;
+	font-family: verdana;
+}
+#header {
+	width:996px;
+	background-color:#70061D;
+	background-image: url('http://its.noctrl.edu/sites/all/themes/its/images/ITSBanner2.png');
+	background-position:right top;
+	background-repeat: no-repeat;
+	height:66px;
+	padding: 8px;
+}
+#header h1 {
+	color: #FFF;
+	font-family: verdana;
+	font-size: 24px;
+	
+}
+#content {
+	background-color:#fff; 
+	padding:8px;
+	color: #333;
+}
+li{
+	list-style: none;
+}
+a {
+	
+	font-family: helvetica, sans-serif;
+	color: #333; 
+}
+
+th {
+	
+	background-color: #ccc;
+	margin-left:      0px;
+	margin-right:     0px;
+	padding-left:     20px;
+	padding-right:    20px;
+}
+
+
+tr {
+	
+	font-family: helvetica, sans-serif;
+	height:      40px;
+}
+
+td {
+	
+	color: #333;
+	padding-left:  10px;
+	padding-right: 10px;
+	text-align:    center;
+	/* Faculty Pending Table style */
+.faculty_pending_table a {
+	
+	font-family: helvetica, sans-serif;
+	color: #ffffff; 
+}
+
+.faculty_pending_table th {
+	
+	background-color: #333333;
+	margin-left:      0px;
+	margin-right:     0px;
+	padding-left:     20px;
+	padding-right:    20px;
+	
+}
+
+.faculty_pending_table_row {
+	cursor: pointer;
+}
+
+.faculty_pending_table_row:hover {
+	cursor: pointer;
+	background-color: #cccccc;
+}
+
+/* End Table style */
+
+/* Faculty approve artifact style */
+#approveArtifactContent {
+
+}
+
+#artifactComments {
+	height: 200px;
+	width: 700px;
+
+}
+
+#coverLetterComments {
+	height: 200px;
+	width: 700px;
+}
+
+#saveAndQuit {
+	position: absolute;	
+	left: 700px;	
+}
+
+#saveAndSubmit {
+	margin-top: 10px;
+	position: absolute;
+	left: 700px;
+}
+
+#approveArtifactFormSeperator{
+	width:700px;
+	margin:auto;
+	float:left;
+	border-top:1px solid #ccc;
+}
+/* End Faculty approve artifact style */
+
+
+
+/**
+ * KG and PA
+ * This changes the color and indent of error messages.
+ * We currently use it to display login errors.
+ */
+error {
+	color: #FF0000;
+	margin-left: 30px;
+}
+
+/**
+ * KG and PA
+ * This changes the indent of the login form.
+ */
+div#login {
+	margin-top: 75px;
+	margin-left: 200px;
+
+}
+
+/*  END KG AND PA */

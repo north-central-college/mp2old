@@ -1,0 +1,15 @@
+<html>
+<head>
+	<title>Education Matrix</title>
+	<link rel="stylesheet" type="text/css" href="/matrixproject/public/css/main.css">
+</head>
+<body>
+	   <div id="header">
+	   	<h1>Education Matrix : <?php echo $this->layout()->pagetitle ?> </h1>
+	   </div>
+       <div id="side-navbar"><?= $this->partial('partials/studentNavMenu.phtml')?></div>
+       <div id="content">
+		<?php echo $this->layout()->content ?>
+	   </div>
+</body>
+</html>

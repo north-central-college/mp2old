@@ -1,0 +1,98 @@
+<h2>This is the Student Page</h2>
+
+<style>
+    div#insertrecord
+    {
+        color: #FFF;
+        font-size: 24px;
+        width:  600px;
+        height: 400px;
+        border: 2px solid #444444;
+        overflow: hidden;
+        text-align: center;
+    }
+</style>
+
+<div id="welcome">
+
+
+Welcome, <strong><?= $this->name->first_name; ?> <?= $this->name->last_name; ?></strong>
+<p>Your current program is <strong><?= $this->roledesc->description; ?></strong></p>
+</div>
+
+<button type="button">Upload Artifacts</button>   <button type="button">Manage Portfolio</button>
+
+<hr>
+<button type="button">Upload Artifacts</button>   <button type="button" onClick="parent.location='standards'">Manage Portfolio</button>
+
+<br><br>
+
+<hr>
+<br>
+
+<div id="uploads">
+	<strong>Recent Uploads</strong>
+	<br>
+	<?php echo "<table id=\"uploaded_artifacts_table\">";?>
+	<?php echo "<tr>";
+	  echo "<th>Artifact Title</th>";
+	  echo "</tr>";
+	?>
+	<?= $this->partialLoop('partials/uploadRow.phtml', $this->uploads) ?>
+	<?php echo "</table>" ?>
+	<br>
+</div>
+
+<div id="linked">
+	<strong>Recent Linked Artifacts</strong>
+	<?php echo "<table id=\"linked_table\">";?>
+	<?php echo "<tr>";
+	  echo "<th>Artifact Title</th>";
+	  echo "<th>Course</th>";
+	  echo "<th>Standard</th>";
+	  echo "<th>Indicator</th>";
+	  echo "</tr>";
+	?>
+	<?= $this->partialLoop('partials/linkedArtifactRow.phtml', $this->links) ?>
+	<?php echo "</table>" ?>
+	<br>
+</div>
+
+
+<div id="submissions">
+	<strong>Recent Submissions</strong>
+	<br>
+	<?php echo "<table id=\"submitted_table\">";?>
+	<?php echo "<tr>";
+	  echo "<th>Artifact Title</th>";
+	  echo "<th>Course</th>";
+	  echo "<th>Standard</th>";
+	  echo "<th>Indicator</th>";
+	  echo "<th>Professor</th>";
+	  echo "</tr>";
+	?>
+	<?= $this->partialLoop('partials/submissionRow.phtml', $this->submit) ?>
+	<?php echo "</table>" ?>
+	<br>
+</div>
+
+
+
+<div id="feedback">
+	<strong>Recent Feedback</strong>
+	<br>
+	<?php echo "<table id=\"eval_table\">";?>
+	<?php echo "<tr>";
+		echo "<th>Artifact Title</th>";
+	  	echo "<th>Course</th>";
+	  	echo "<th>Standard</th>";
+	  	echo "<th>Indicator</th>";
+	  	echo "<th>Professor</th>";
+	  	echo "<th>Rating</th>";
+	  	echo "</tr>";
+	?>
+	<?= $this->partialLoop('partials/evaluatedRow.phtml', $this->evaluated);?>
+	<?php echo "</table>" ?>
+	<br>
+</div>
+

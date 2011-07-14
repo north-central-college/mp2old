@@ -1,0 +1,13 @@
+<div id=login>
+<h2>Please Login</h2>
+
+<?=$this->form?>
+
+<?php
+	 
+	if ($this->error_flag)
+	{
+		echo "<error>" . "Invalid username or password" . "</error>";
+	}
+?>
+</div>
